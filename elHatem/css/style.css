@@ -389,7 +389,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  height: 400px; }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -8467,7 +8467,8 @@ width: 100%; }
   display: block;
   margin-top: 24px;
   overflow: hidden; 
-}
+  background: #2787d2;
+  height: 235px;}
   .banner-item:hover .banner-img {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -8655,7 +8656,8 @@ img.single-banner-img {
           width: 65%;
           position: relative;
           z-index: -1;
-          background-position: center center; }
+          background-position: center center;
+          height: auto; }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
             position: absolute;
             top: 0;
@@ -8954,7 +8956,8 @@ img.single-banner-img {
     -moz-box-shadow: inset 0px 0px 101px 21px rgba(0, 0, 0, 0.09);
     box-shadow: inset 0px 0px 101px 21px rgba(0, 0, 0, 0.09);
     background: #fff;
-    z-index: 1; }
+    z-index: 1;
+  text-align: center; }
     .product .img-prod .overlay {
       position: absolute;
       top: 50%;
