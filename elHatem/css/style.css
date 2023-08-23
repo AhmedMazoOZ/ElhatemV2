@@ -3510,7 +3510,14 @@ input[type="button"].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%; }
-
+.contact_info .info{
+  border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    background: #74a8f8 !important;
+    color: #000;
+}
+.contact_info span{display: block;}
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
