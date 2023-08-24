@@ -3513,11 +3513,9 @@ input[type="button"].btn-block {
 .contact_info .info{
   border-radius: 8px;
     font-size: 16px;
-    text-align: center;
-    background: #74a8f8 !important;
     color: #000;
 }
-.contact_info span{display: block;}
+.contact_info span{display: block;text-decoration: underline;}
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -8434,7 +8432,7 @@ h1, h2, h3, h4, h5,
     display: flex;
   }
   .div_to_hold_images {
-      width:102px;
+      width:130px;
       margin:2px;
       display: inline-block;
       overflow:hidden;
