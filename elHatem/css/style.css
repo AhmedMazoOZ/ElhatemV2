@@ -8546,13 +8546,14 @@ img.single-banner-img {
     color: #15479f;
 }
 .screen {		
-	background: #f5f5f570;
-    position: relative;
-    height: 600px;
-    width: 360px;
-    box-shadow: 0px 0px 24px #0c2b48;
+  background: #f5f5f570;
+  position: relative;
+  height: auto;
+  width: 50%;
+  box-shadow: 0px 0px 24px #0c2b482e;
+  top: 35px;
+  margin-bottom: 10%;
 }
-
 .screen__content {
 	z-index: 1;
 	position: relative;	
@@ -8564,11 +8565,10 @@ img.single-banner-img {
 }
 .login {
 	padding: 30px;
-  margin-top: 30%;
 }
 
 .login__field {
-	padding: 13px 0px;	
+	padding: 9px 0px;	
 	position: relative;	
 }
 .login__input {
@@ -8611,11 +8611,11 @@ img.single-banner-img {
 } */
 
 .login__submit {
-	background: #fff;
+	  background: #fff;
     font-size: 14px;
     margin-top: 30px;
-    padding: 16px 20px;
-    border-radius: 26px;
+    padding: 5px 20px;
+    border-radius: 6px;
     border: 1px solid #D4D3E8;
     text-transform: uppercase;
     font-weight: 700;
@@ -8623,11 +8623,14 @@ img.single-banner-img {
     align-items: center;
     width: 100%;
     color: #10429c;
-    box-shadow: 0px 2px 2px #567696;
+    box-shadow: 0px 2px 2px #56769682;
     cursor: pointer;
     transition: .2s;
 }
-
+.cust-btn{
+  background: #0065be;
+  color: #fff;
+}
 .login__submit:active,
 .login__submit:focus,
 .login__submit:hover {
