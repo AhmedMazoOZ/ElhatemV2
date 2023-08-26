@@ -8439,12 +8439,13 @@ h1, h2, h3, h4, h5,
       overflow:hidden;
       margin-left:8px;
       text-align: center;
+      padding: 5px;
   }
   .div_to_hold_images img{
     width: 100%;
     height: auto;
     border-radius: 50%;
-    box-shadow:-1px 20px 17px -24px #a9acae;
+    box-shadow:1px 0px 6px 0px #a9acae87;
   }
   .contact_detail{
     font-size: 14px;
@@ -8545,11 +8546,11 @@ img.single-banner-img {
     color: #15479f;
 }
 .screen {		
-	background: #fff;
+	background: #f5f5f570;
     position: relative;
     height: 600px;
     width: 360px;
-    /* box-shadow: 0px 0px 24px #0c2b48; */
+    box-shadow: 0px 0px 24px #0c2b48;
 }
 
 .screen__content {
@@ -8567,7 +8568,7 @@ img.single-banner-img {
 }
 
 .login__field {
-	padding: 20px 0px;	
+	padding: 13px 0px;	
 	position: relative;	
 }
 .login__input {
@@ -8586,7 +8587,11 @@ img.single-banner-img {
 	top: 30px;
 	color: #7875B5;
 }
-
+.loginFormInput{
+  height: 40px !important;
+    border: 1px solid #000 !important;
+    border-radius: 6px !important;
+}
 .login__input {
 	border: none;
 	border-bottom: 2px solid #D1D1D4;
@@ -8597,13 +8602,13 @@ img.single-banner-img {
 	width: 100%;
 	transition: .2s;
 }
-
+/* 
 .login__input:active,
 .login__input:focus,
 .login__input:hover {
 	outline: none;
 	border-bottom-color: #6A679E;
-}
+} */
 
 .login__submit {
 	background: #fff;

@@ -27,15 +27,25 @@
         <link rel="stylesheet" href="css/style.css">
     <style>
       @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-    body {
-	background:linear-gradient(90deg, #a5cff2, #0b3d99);
-}
-
+   
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.form-control{height: 40px !important;}
+.form-control::placeholder {
+    color: #6c757d70;
+    opacity: 1;
+    /* font-weight: 100; */
+    font-size: 13px;
+}
+.screen{height: auto;}
+.login {
+    margin-top: 0px;
 }
 </style>
 </head>
@@ -44,31 +54,45 @@
 <div class="container">
     <div class="screen">
 		<div class="screen__content">
-			<img src="images/about.jpg">			
-			</form>
-		</div>
-			
-	</div>
-    <div class="screen">
-		<div class="screen__content">
             <form class="login">
-                <h1 class="LoginH1">Register on Elhatem</h1>
+                <h1 class="LoginH1">Log in to  Elhatem</h1>
 				<div class="login__field">
-					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name ">
+					<label>First Name</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="First name">
 				</div>
 				<div class="login__field">
-					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="Email">
+					<label>Last Name</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="Last name">
 				</div>
 				<div class="login__field">
-					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password">
+					<label>Email</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="Email">
 				</div>
+				<div class="login__field">
+					<label>Mobile</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="Mobile">
+				</div>
+				<div class="login__field">
+					<label>Password</label>
+					<input type="password" class="login__input form-control loginFormInput" placeholder="Password">
+				</div>
+				<div class="login__field">
+					<label>confirm Password</label>
+					<input type="password" class="login__input form-control loginFormInput" placeholder="confirm Password">
+				</div>
+				<div class="login__field">
+					<label>City</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="City">
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">sign up</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
 				<button class="button login__submit">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>	
+								
 			</form>
 		</div>
 			
