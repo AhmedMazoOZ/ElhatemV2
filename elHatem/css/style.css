@@ -35,6 +35,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -3515,7 +3516,7 @@ input[type="button"].btn-block {
     font-size: 16px;
     color: #000;
 }
-.contact_info span{display: block;text-decoration: underline;}
+.contact_info span{display: block;}
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -8437,17 +8438,36 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       overflow:hidden;
       margin-left:8px;
+      text-align: center;
   }
   .div_to_hold_images img{
     width: 100%;
     height: auto;
     border-radius: 50%;
+    box-shadow:6px 51px 17px -24px #0c2b48;
+  }
+  .contact_detail{
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .contact_detail::after{
+    content: "";
+    width: 50px;
+    height: 2.5px;
+    background: #0044cc;
+    position: absolute;
+    left: 0;
+    bottom: -22px;
   }
   .MapLocation{
     border-radius:8px;
   }
   /*  */
-
+.valueImg{width:100px;}
 .banner-section {
   overflow: hidden;
   margin: 20px; }
@@ -8518,6 +8538,131 @@ img.single-banner-img {
     transform: translateX(-50%) translateY(-50%);
   }
   
+.LoginH1{
+  font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #15479f;
+}
+.screen {		
+	background: #fff;
+    position: relative;
+    height: 600px;
+    width: 360px;
+    /* box-shadow: 0px 0px 24px #0c2b48; */
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+.screen__content img{
+  width: 100%;
+  height: 100%;
+}
+.login {
+	padding: 30px;
+  margin-top: 30%;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 100%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    color: #10429c;
+    box-shadow: 0px 2px 2px #567696;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+
   /* Just styling the content of the div, the *magic* in the previous rules */
   .video-container .caption {
     z-index: 1;
