@@ -25,7 +25,16 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+<style>
+	 img{
+  width: 100%;
+  display: block;
+}
+</style>  
+</head>
   <body class="goto-here">
     <div class="py-2 bg-black">
     	<div class="container">
@@ -42,14 +51,20 @@
 					    </div>
 						<div class="col-md-4 pr-4 d-flex topper align-items-center text-center" >
 							<div class="d-flex align-items-center"style="justify-content: center; width:100%;">
-                <a class="text-white" href="login.html">
-                    <span>  Login </span>
-                </a>
-                <span style="padding: 0 3px;">|</span>
-                <a class="text-white" href="signup.html">
-                    <span>  Signup </span>
-                </a>
-              </div>
+								<a class="text-white" href="login.html">
+									<span>  Login </span>
+								</a>
+								<span style="padding: 0 3px;">|</span>
+								<a class="text-white" href="signup.html">
+									<span>  Signup </span>
+								</a>
+								<div class="currency-wrapper" style="width: 22%;">
+									<select class="select_lang" name="language" id="language">
+										<option value="Arabic">AR</option>
+										<option value="English">EN</option>
+									</select>
+								</div>
+							</div>
 					    </div>
 				    </div>
 			    </div>
@@ -92,8 +107,45 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-lg-6 mb-5 ftco-animate">
-    				<a href="images/product_one.png" class="image-popup prod-img-bg text-center"><img src="images/product_one.png" class="img-fluid" alt="Colorlib Template"></a>
+    				<!-- <a href="images/product_one.png" class="image-popup prod-img-bg text-center"><img src="images/product_one.png" class="img-fluid" alt="Colorlib Template"></a> -->
+					<div class = "card-wrapper">
+						<div class = "card">
+						  <!-- card left -->
+						  <div class = "product-imgs">
+							<div class = "img-display">
+							  <div class = "img-showcase">
+								<img src = "images/shoe_1.jpg" alt = "shoe image">
+								<img src = "images/shoe_2.jpg" alt = "shoe image">
+								<img src = "images/shoe_3.jpg" alt = "shoe image">
+								<img src = "images/shoe_4.jpg" alt = "shoe image">
+							  </div>
+							</div>
+							<div class = "img-select">
+							  <div class = "img-item">
+								<a href = "#" data-id = "1">
+								  <img src = "images/shoe_1.jpg" alt = "shoe image">
+								</a>
+							  </div>
+							  <div class = "img-item">
+								<a href = "#" data-id = "2">
+								  <img src = "images/shoe_2.jpg" alt = "shoe image">
+								</a>
+							  </div>
+							  <div class = "img-item">
+								<a href = "#" data-id = "3">
+								  <img src = "images/shoe_3.jpg" alt = "shoe image">
+								</a>
+							  </div>
+							  <div class = "img-item">
+								<a href = "#" data-id = "4">
+								  <img src = "images/shoe_4.jpg" alt = "shoe image">
+								</a>
+							  </div>
+							</div>
+						  </div>
+						</div>
     			</div>
+			</div>
     			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
     				<h3>Protective suit</h3>
     				<div class="rating d-flex">
@@ -453,6 +505,7 @@
 		    
 		});
 	</script>
+    <script src="js/script.js"></script>
     
   </body>
 </html>
