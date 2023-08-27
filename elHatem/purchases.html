@@ -28,6 +28,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+	<style>
+.rate {
+  /* float: left; */
+  /* display: inline-block; */
+  height: 36px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.rate:not(:checked) > input {
+  /* position: absolute; */
+  top: -9999px;
+  margin-left: -24px;
+  width: 20px;
+  padding-right: 14px;
+  z-index: -10;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+/* #star1:focus{
+
+} */
+.rate2 {
+  float: none;
+}
+.rate:not(:checked) > label::before {
+  content: '★ ';
+  position: relative;
+  top: -10px;
+  left: 2px;
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+  /* outline: -webkit-focus-ring-color auto 5px; */
+}
+.rate > input:checked:focus + label, .rate > input:focus + label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+  /* outline: -webkit-focus-ring-color auto 5px; */
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+textarea{
+	width: 85%;
+    border-radius: 8px;
+    height: 60px;
+}
+	</style>
   </head>
   <body class="goto-here">
     <div class="py-2 bg-black">
@@ -54,8 +119,8 @@
 								</a>
 								<div class="currency-wrapper" style="width: 22%;">
 									<select class="select_lang text-white" name="language" id="language">
-										<option value="Arabic">AR</option>
-										<option value="English">EN</option>
+										<option class="text-dark" value="Arabic">AR</option>
+										<option class="text-dark" value="English">EN</option>
 									</select>
 								</div>
                                 </div>
@@ -81,6 +146,7 @@
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+	          <li class="nav-item"><a href="whishlist.html" class="nav-link"><img class="whish_list" src="images/heart.png"><span class="whishIcon">2</span></a></li>
 
 	        </ul>
 	      </div>
@@ -111,7 +177,8 @@
 						        <th>Product</th>
 						        <th>Price</th>
 						        <th>Quantity</th>
-						        <th>Reorder</th>
+						        <th>Status</th>
+						        <th>Actions</th>
 						      </tr>
 						    </thead>
 						    <tbody>
@@ -125,11 +192,14 @@
 						        </td>
 						        <td class="price">120 KWD</td>				        
 						        <td class="price">12 pcs</td>				        
+						        <td class="price">Delivered</td>				        
                                 <td>
-                                    <p class="bottom-area d-flex px-3">
-                                        <a href="shop.html" class="btn btn-primary"><span>Reorder <i class="ion-ios-add ml-1"></i></span></a>
+                                    <p class="bottom-area d-flex px-3 " style="justify-content: space-evenly;">
+                                        <a data-toggle="modal" data-target="#Rate_product" class="btn btn-success text-white"><span>Rate</span></a>
+                                        <a data-toggle="modal" data-target="#product_details" class="btn btn-info text-white"><span>Details</span></a>
+                                        <a href="shop.html" class="btn btn-primary"><span>Reorder</span></a>
                                     </p>
-                                </td>                                </td>
+                                </td>    
 						      </tr><!-- END TR-->
 
 						      <tr class="text-center product-details">
@@ -143,9 +213,13 @@
 						        
 						        <td class="total">120 KWD</td>
 						        <td class="total">23 pcs</td>
+						        <td class="price">Delivered</td>				        
+
                                 <td>
-                                    <p class="bottom-area d-flex px-3">
-                                        <a href="shop.html" class="btn btn-primary"><span>Reorder <i class="ion-ios-add ml-1"></i></span></a>
+                                    <p class="bottom-area d-flex px-3 " style="justify-content: space-evenly;">
+                                        <a data-toggle="modal" data-target="#Rate_product" class="btn btn-success text-white"><span>Rate</span></a>
+                                        <a data-toggle="modal" data-target="#product_details" class="btn btn-info text-white"><span>Details</span></a>
+                                        <a href="shop.html" class="btn btn-primary"><span>Reorder</span></a>
                                     </p>
                                 </td>						        
 						      </tr><!-- END TR-->
@@ -160,10 +234,14 @@
 						        
 						        <td class="total">120 KWD</td>
 						        <td class="total">9 pcs</td>
+						        <td class="price">Delivered</td>				        
+
                                 <td>
-                                    <p class="bottom-area d-flex px-3">
-                                        <a href="shop.html" class="btn btn-primary"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                    </p>
+                                    <p class="bottom-area d-flex px-3 " style="justify-content: space-evenly;">
+										<a data-toggle="modal" data-target="#Rate_product" class="btn btn-success text-white"><span>Rate</span></a>
+                                        <a data-toggle="modal" data-target="#product_details" class="btn btn-info text-white"><span>Details</span></a>
+                                        <a href="shop.html" class="btn btn-primary"><span>Reorder</span></a>
+									</p>
                                 </td>						        
 						      </tr><!-- END TR-->
 						    </tbody>
@@ -312,6 +390,96 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+<!-- Rate Modal -->
+<div class="modal fade" id="Rate_product" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Rate Modal </h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<h6><b>Protective suit review</b></h6>
+			<div class="text-center">
+			<div class="rate">
+				<input type="radio" id="star5" name="rate" value="5" onkeydown="navRadioGroup(event)" onfocus="setFocus(event)" required="">
+				<label for="star5" title="5 stars">5 stars</label>
+				<input type="radio" id="star4" name="rate" value="4" onkeydown="navRadioGroup(event)">
+				<label for="star4" title="4 stars">4 stars</label>
+				<input type="radio" id="star3" name="rate" value="3" onkeydown="navRadioGroup(event)">
+				<label for="star3" title="3 stars">3 stars</label>
+				<input type="radio" id="star2" name="rate" value="2" onkeydown="navRadioGroup(event)">
+				<label for="star2" title="2 stars">2 stars</label>
+				<input type="radio" id="star1" name="https://codepen.io/pen/rate" value="1" onkeydown="navRadioGroup(event)" onfocus="setFocus(event)">
+				<label for="star1" title="1 star">1 star</label>
+			  </div>
+			  <p><textarea name="reviewComments" id="reviewComments" cols="20" rows="5" required="" placeholder="Leave your review"></textarea></p>
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+<!-- Details Modal -->
+<div class="modal fade" id="product_details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Product details <b>[12 Jun 2023]</b></h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="col-md-12 details__div">
+			<div class="visa">
+				<h4>Payment Method</h4>
+				<p>Visa</p>
+			</div>
+		  </div>
+		  <div class="col-md-12 details__div">
+			<h4>Address</h4>
+			<p>Cairo - Nasr city fifth square</p>
+		  </div>
+		<div class="col-md-12 details__div">
+			<h4>Summary</h4>
+				<table style="width:100%">
+					<tr>
+						<td>Items</td>
+						<td>452.65 KWD</td>
+					</tr>
+					<tr>
+						<td>Delivery</td>
+						<td>50 KWD</td>
+					</tr>
+					<tr>
+						<td>Total without Tax</td>
+						<td> 452.6 KWD</td>
+					</tr>
+					<tr>
+						<td>Taxes</td>
+						<td>2.9 KWD</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>458.9 KWD</td>
+					</tr>
+				</table>
+		  </div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -330,6 +498,175 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
-    
+    <script>
+		let focusedElementBeforeModal;
+const modal = document.getElementById('modal');
+const modalOverlay = document.querySelector('.modal-overlay');
+
+window.onload = () => {
+  const addReview = document.getElementById('review-add-btn');
+  addReview.id = 'review-add-btn';
+  addReview.innerHTML = '+';
+  addReview.setAttribute('aria-label', 'add review');
+  addReview.title = 'Add Review';
+  addReview.addEventListener('click', openModal);
+  addReview.click();
+} 
+
+const openModal = () => {
+  // Save current focus
+  focusedElementBeforeModal = document.activeElement;
+
+  // Listen for and trap the keyboard
+  modal.addEventListener('keydown', trapTabKey);
+
+  // Listen for indicators to close the modal
+  modalOverlay.addEventListener('click', closeModal);
+  // Close btn
+  const closeBtn = document.querySelector('.close-btn');
+  closeBtn.addEventListener('click', closeModal);
+
+  // submit form
+  const form = document.getElementById('review-form');
+  form.addEventListener('submit', submitAddReview, false);
+
+  // Find all focusable children
+  var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+  var focusableElements = modal.querySelectorAll(focusableElementsString);
+  // Convert NodeList to Array
+  focusableElements = Array.prototype.slice.call(focusableElements);
+
+  var firstTabStop = focusableElements[0];
+  var lastTabStop = focusableElements[focusableElements.length - 1];
+
+  // Show the modal and overlay
+  modal.classList.add('show');
+  modalOverlay.classList.add('show');
+
+  // Focus first child
+  // firstTabStop.focus();
+  const reviewName = document.getElementById('reviewName');
+  reviewName.focus();
+
+  function trapTabKey(e) {
+    // Check for TAB key press
+    if (e.keyCode === 9) {
+
+      // SHIFT + TAB
+      if (e.shiftKey) {
+        if (document.activeElement === firstTabStop) {
+          e.preventDefault();
+          lastTabStop.focus();
+        }
+
+      // TAB
+      } else {
+        if (document.activeElement === lastTabStop) {
+          e.preventDefault();
+          firstTabStop.focus();
+        }
+      }
+    }
+
+    // ESCAPE
+    if (e.keyCode === 27) {
+      closeModal();
+    }
+  }
+};
+
+const submitAddReview = (e) => {
+  // console.log(e);
+  console.log('Form subbmitted!');
+  e.preventDefault();
+  closeModal();
+};
+
+const closeModal = () => {
+  // Hide the modal and overlay
+  modal.classList.remove('show');
+  modalOverlay.classList.remove('show');
+
+  const form = document.getElementById('review-form');
+  form.reset();
+  // Set focus back to element that had it before the modal was opened
+  focusedElementBeforeModal.focus();
+};
+
+const setFocus = (evt) => {
+  const rateRadios = document.getElementsByName('rate');
+  const rateRadiosArr = Array.from(rateRadios);
+  const anyChecked = rateRadiosArr.some(radio => { return radio.checked === true; });
+  // console.log('anyChecked', anyChecked);
+  if (!anyChecked) {
+    const star1 = document.getElementById('star1');
+    star1.focus();
+    // star1.checked = true;
+  }
+};
+
+const navRadioGroup = (evt) => {
+  // console.log('key', evt.key, 'code', evt.code, 'which', evt.which);
+  // console.log(evt);
+  
+  const star1 = document.getElementById('star1');  
+  const star2 = document.getElementById('star2');  
+  const star3 = document.getElementById('star3');  
+  const star4 = document.getElementById('star4');  
+  const star5 = document.getElementById('star5');  
+
+  if (['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'].includes(evt.key)) {
+    evt.preventDefault();
+    // console.log('attempting return');
+    if (evt.key === 'ArrowRight' || evt.key === 'ArrowDown') {
+      switch(evt.target.id) {
+        case 'star1':
+          star2.focus();
+          star2.checked = true;
+          break;
+        case 'star2':
+          star3.focus();
+          star3.checked = true;
+          break;
+        case 'star3':
+          star4.focus();
+          star4.checked = true;
+          break;
+        case 'star4':
+          star5.focus();
+          star5.checked = true;
+          break;
+        case 'star5':
+          star1.focus();
+          star1.checked = true;
+          break;
+      }
+    } else if (evt.key === 'ArrowLeft' || evt.key === 'ArrowUp') {
+      switch(evt.target.id) {
+        case 'star1':
+          star5.focus();
+          star5.checked = true;
+          break;
+        case 'star2':
+          star1.focus();
+          star1.checked = true;
+          break;
+        case 'star3':
+          star2.focus();
+          star2.checked = true;
+          break;
+        case 'star4':
+          star3.focus();
+          star3.checked = true;
+          break;
+        case 'star5':
+          star4.focus();
+          star4.checked = true;
+          break;
+      }
+    }
+  }
+};
+	</script>
   </body>
 </html>
