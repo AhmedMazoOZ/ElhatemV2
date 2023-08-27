@@ -47,7 +47,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -3780,6 +3780,10 @@ input[type="button"].btn-block {
 
 .select_lang:focus{
   outline:none;
+}
+.favimg img{
+  width: 20px;
+  float: right;
 }
       /* Custom dropdown */
       
@@ -8149,8 +8153,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  /* font-family: "Open Sans", Arial, sans-serif; */
-  font-family: 'Kanit', sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
   background: #fff;
   font-size: 15px;
   line-height: 1.8;
