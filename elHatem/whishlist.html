@@ -92,7 +92,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Cart</span></p>
-            <h1 class="mb-0 bread">My Cart</h1>
+            <h1 class="mb-0 bread">My Whishlist</h1>
           </div>
         </div>
       </div>
@@ -102,16 +102,15 @@
 			<div class="container">
 				<div class="row">
     			<div class="col-md-12 ftco-animate">
-    				<div class="cart-list">
-	    				<table class="table">
+    				<div class="whish-list">
+	    				<table class="table table-bordered table-striped">
 						    <thead class="thead-primary">
 						      <tr class="text-center">
 						        <th>&nbsp;</th>
 						        <th>&nbsp;</th>
 						        <th>Product</th>
 						        <th>Price</th>
-						        <th>Quantity</th>
-						        <th>Total</th>
+						        <th>Add to cart</th>
 						      </tr>
 						    </thead>
 						    <tbody>
@@ -121,32 +120,14 @@
 						        <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
 						        
 						        <td class="product-name">
-						        	<h3>protective suit 2019</h3>
-						        	<p>Far far away, behind the word mountains, far from the countries</p>
+						        	<h3>Medical suit 2019</h3>
 						        </td>
-						        
-						        <td class="price">120 KWD</td>
-						        
-						        <td class="quantity">
-									<div class="input-group d-flex mb-3">
-										<span class="input-group-btn mr-2">
-										   <button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
-										  <i class="ion-ios-remove"></i>
-										   </button>
-										   </span>
-										<input type="text" id="quantity" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-										<span class="input-group-btn ml-2">
-										   <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-											<i class="ion-ios-add"></i>
-										</button>
-										</span>
-									 </div>
-						        	<!-- <div class="input-group mb-3">
-					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100"> -->
-					          	</div>
-					          </td>
-						        
-						        <td class="total">120 KWD</td>
+						        <td class="price">120 KWD</td>				        
+                                <td>
+                                    <p class="bottom-area d-flex px-3">
+                                        <a href="cart.html" class="btn btn-primary"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                    </p>
+                                </td>                                </td>
 						      </tr><!-- END TR-->
 
 						      <tr class="text-center product-details">
@@ -156,66 +137,95 @@
 						        
 						        <td class="product-name">
 						        	<h3>protective suit 2019</h3>
-						        	<p>Far far away, behind the word mountains, far from the countries</p>
 						        </td>
 						        
-						        <td class="price">120 KWD</td>
+						        <td class="total">120 KWD</td>
+                                <td>
+                                    <p class="bottom-area d-flex px-3">
+                                        <a href="cart.html" class="btn btn-primary"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                    </p>
+                                </td>						        
+						      </tr><!-- END TR-->
+						      <tr class="text-center product-details">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
 						        
-						        <td class="quantity">
-									<div class="input-group d-flex mb-3">
-										<span class="input-group-btn mr-2">
-										   <button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
-										  <i class="ion-ios-remove"></i>
-										   </button>
-										   </span>
-										<input type="text" id="quantity" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-										<span class="input-group-btn ml-2">
-										   <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-											<i class="ion-ios-add"></i>
-										</button>
-										</span>
-									 </div>
-						        	<!-- <div class="input-group mb-3">
-					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100"> -->
-					          	</div>
-					          </td>
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-4.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>protective suit 2019</h3>
+						        </td>
 						        
 						        <td class="total">120 KWD</td>
+                                <td>
+                                    <p class="bottom-area d-flex px-3">
+                                        <a href="cart.html" class="btn btn-primary"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                    </p>
+                                </td>						        
 						      </tr><!-- END TR-->
 						    </tbody>
 						  </table>
 					  </div>
     			</div>
     		</div>
-    		<div class="row justify-content-start">
-    			<div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
-    				<div class="cart-total mb-3">
-    					<h3>Cart Totals</h3>
-    					<p class="d-flex">
-    						<span>Subtotal</span>
-    						<span>240 KWD</span>
-    					</p>
-    					<p class="d-flex">
-    						<span>Delivery</span>
-    						<span>20 KWD</span>
-    					</p>
-    					<p class="d-flex">
-    						<span>Discount</span>
-    						<span>60 KWD</span>
-    					</p>
-    					<hr>
-    					<p class="d-flex total-price">
-    						<span>Total</span>
-    						<span>200 KWD</span>
-    					</p>
-    				</div>
-    				<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
-    			</div>
-    		</div>
 			</div>
-		</section>
+    </section>
 		
-
+        <section class="ftco-gallery" style="background-color:#f0f0f0;padding-top: 3.7rem;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 heading-section text-center mb-4 ftco-animate">
+                <h2 class="mb-4">Follow Us On Instagram</h2>
+                <p>We always strive to provide what is new and modern with the highest quality standards</p>
+              </div>
+                </div>
+            </div>
+            <div class="container-fluid px-0">
+                <div class="row no-gutters">
+                        <div class="col-md-4 col-lg-2 ftco-animate">
+                            <a href="images/gallery-1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
+                                <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-2 ftco-animate">
+                            <a href="images/gallery-7.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-7.jpg);">
+                                <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-2 ftco-animate">
+                            <a href="images/gallery-3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-3.jpg);">
+                                <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-2 ftco-animate">
+                            <a href="images/gallery-4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-4.jpg);">
+                                <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-2 ftco-animate">
+                            <a href="images/gallery-5.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-5.jpg);">
+                                <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-2 ftco-animate">
+                            <a href="images/gallery-6.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-6.jpg);">
+                                <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            </a>
+                        </div>
+            </div>
+            </div>
+        </section>
 		<footer class="ftco-footer ftco-section">
 			<div class="container">
 				<div class="row">
@@ -316,43 +326,6 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
-  <script>
-	
-	$(document).ready(function(){
-
-	var quantitiy=0;
-	   $('.quantity-right-plus').click(function(e){
-			
-			// Stop acting like a button
-			e.preventDefault();
-			// Get the field name
-			var quantity = parseInt($('#quantity').val());
-			
-			// If is not undefined
-				
-				$('#quantity').val(quantity + 1);
-
-			  
-				// Increment
-			
-		});
-
-		 $('.quantity-left-minus').click(function(e){
-			// Stop acting like a button
-			e.preventDefault();
-			// Get the field name
-			var quantity = parseInt($('#quantity').val());
-			
-			// If is not undefined
-		  
-				// Increment
-				if(quantity>0){
-				$('#quantity').val(quantity - 1);
-				}
-		});
-		
-	});
-</script>
     
   </body>
 </html>
