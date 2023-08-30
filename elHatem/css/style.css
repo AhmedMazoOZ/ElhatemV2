@@ -8229,7 +8229,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 20px;
@@ -8868,7 +8868,7 @@ img.single-banner-img {
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
-          width: 65%;
+          width: 70%;
           position: relative;
           z-index: -1;
           background-position: center center;
@@ -8899,7 +8899,7 @@ img.single-banner-img {
               left: 0;
               bottom: 0;
               right: 0;
-              width: 1200px;
+              width: 88%;
               margin: 0 auto; } }
           @media (max-width: 1199.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
@@ -8923,12 +8923,12 @@ img.single-banner-img {
                 transform: translateY(-50%);
                 right: 0;
                 max-width: 50%;
-                padding-left: 45px;
-                padding-right: 3em; } }
+                padding-left: 20px;
+                padding-right: 6em; } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
           font-weight: 300;
-          font-size: 12px;
+          font-size: 14px;
           letter-spacing: 4px;
           text-transform: uppercase;
           display: inline-block;
@@ -8945,11 +8945,11 @@ img.single-banner-img {
         .owl-carousel.home-slider .slider-item .slider-text .horizontal {
           position: relative; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
-          font-size: 44px;
+          font-size: 48px;
           color: #000000;
           line-height: 1.3;
-          font-weight: 300;
-          text-transform: uppercase; }
+          font-weight: 700;
+          text-transform: uppercase;}
           .owl-carousel.home-slider .slider-item .slider-text h1 span {
             font-weight: 900; }
           @media (max-width: 991.98px) {
