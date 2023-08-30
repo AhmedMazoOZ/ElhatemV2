@@ -28,32 +28,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+	<style>
+		.home_custome_link{
+			border: 1px solid #fff !important;
+			padding: 5px 10px !important;
+			margin-top: 19px !important;
+			border-radius: 20px !important;
+			margin-right: 13px !important;
+			color: #fff !important;
+		}
+	</style>
   </head>
   <body class="goto-here">
-    <div class="py-2 bg-black">
+    <div class="py-2 bg-white">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-	    		<div class="col-lg-12 d-block">
+	    		<div class="col-lg-12 d-block" style="font-weight: bold;">
 		    		<div class="row d-flex">
 		    			<div class="col-md-4 pr-4 d-flex topper align-items-center text-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
-						    <span class="text"><span class="icon-phone2"></span>60933345 - 50524941</span>
+						    <span class="text-primary"><span class="icon-phone2"></span>60933345 - 50524941</span>
 					    </div>
 					    <div class="col-md-4 pr-4 d-flex topper align-items-center text-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
-						    <span class="text"><span class="icon-paper-plane"></span>alhatemfactory@gmail.com</span>
+						    <span class="text-primary"><span class="icon-paper-plane"></span>alhatemfactory@gmail.com</span>
 					    </div>
 						<div class="col-md-4 pr-4 d-flex topper align-items-center text-center" >
 							<div class="d-flex align-items-center"style="justify-content: center; width:100%;">
-								<a class="text-white" href="login.html">
+								<a class="text-primary" href="login.html">
 									<span>  Login </span>
 								</a>
 								<span style="padding: 0 3px;">|</span>
-								<a class="text-white" href="signup.html">
+								<a class="text-primary" href="signup.html">
 									<span>  Signup </span>
 								</a>
 								<div class="currency-wrapper" style="width: 22%;">
-									<select class="select_lang text-white" name="language" id="language">
+									<select class="select_lang text-primary" name="language" id="language">
 										<option class="text-dark" value="Arabic">AR</option>
 										<option class="text-dark" value="English">EN</option>
 									</select>
@@ -73,16 +83,17 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="" class="nav-link">Sectors</a></li>
-	          <li class="nav-item active"><a href="shop.html" class="nav-link">Products</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
-	          <li class="nav-item"><a href="whishlist.html" class="nav-link"><img class="whish_list" src="images/heart.png"><span class="whishIcon">2</span></a></li>
-
-	        </ul>
+	        <ul class="navbar-nav mr-auto left">
+	          <li class="nav-item active"><a href="index.html" class="nav-link home_custome_link">Home</a></li>
+	          <li class="nav-item active"><a href="" class="nav-link home_custome_link">Sectors</a></li>
+	          <li class="nav-item active"><a href="shop.html" class="nav-link home_custome_link">Products</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link home_custome_link">About</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link home_custome_link">Contact</a></li>
+	          </ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+				<li class="nav-item"><a href="whishlist.html" class="nav-link"><img class="whish_list" src="images/heart.png"><span class="whishIcon">2</span></a></li>
+			  </ul>
 	      </div>
 	    </div>
 	  </nav>
@@ -99,7 +110,7 @@
 		          	<div class="text">
 		          		<span class="subheading">#Our services</span>
 		          		<div class="horizontal">
-				            <h1 class="mb-4 mt-3">Al-Hatem Manufacturing for ready-made serves.</h1>
+				            <h1 class="mb-4 mt-3 text-white">Al-Hatem Manufacturing for ready-made serves.</h1>
 				            <p class="mb-4">to provide all requirements of military sectors workers.</p>
 				            
 				            <p><a href="about.html" class="btn-custom">More</a></p>
@@ -119,7 +130,7 @@
 		          	<div class="text">
 		          		<span class="subheading">#our vision</span>
 		          		<div class="horizontal">
-				            <h1 class="mb-4 mt-3">To be one of the pioneer manufacturers in kuwait. </h1>
+				            <h1 class="mb-4 mt-3 text-white">To be one of the pioneer manufacturers in kuwait. </h1>
 				            <p class="mb-4">in the field of manufacturing and processing of high quality
  clothes for military and trading purposes</p>
 				            
@@ -135,11 +146,11 @@
 	<section id="sectors">
 		<h3>sectors</h3>
 		<div class="container"> 
-			<div class="div_to_hold_images"><img src="images/logo_one.png"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
-			<div class="div_to_hold_images"><img src="images/logo_two.png"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
-			<div class="div_to_hold_images"><img src="images/logo_three.png"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
-			<div class="div_to_hold_images"><img src="images/logo_four.png"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
-			<div class="div_to_hold_images"><img src="images/logohatem.png"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
+			<div class="div_to_hold_images"><img src="images/logo_one.png" onclick="window.location.href='shop.html'"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
+			<div class="div_to_hold_images"><img src="images/logo_two.png" onclick="window.location.href='shop.html'"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
+			<div class="div_to_hold_images"><img src="images/logo_three.png" onclick="window.location.href='shop.html'"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
+			<div class="div_to_hold_images"><img src="images/logo_four.png" onclick="window.location.href='shop.html'"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
+			<div class="div_to_hold_images"><img src="images/logohatem.png" onclick="window.location.href='shop.html'"><br><button class="btn btn-primary" style="margin-top: 40%;" onclick="window.location.href='shop.html'"> See More</button></div>
 			<!-- <div class="div_to_hold_images"></div> -->
 		</div>
 	</section>
@@ -338,7 +349,7 @@
 	    					</div>
     						<h3><a href="#">Medical suit</a></h3>
   							<div class="pricing">
-	    							    						<p class="price"><span class="mr-2 price-dc">KWD 120.00</span><span class="price-sale">KWD 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>>
+	    							    						<p class="price"><span class="mr-2 price-dc">KWD 120.00</span><span class="price-sale">KWD 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
@@ -419,7 +430,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-6 col-md-6 col-12 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
-                                <a class="banner-item position-relative rounded" href="collection-left-sidebar.html">
+                                <a class="banner-item position-relative rounded" href="shop.html">
                                     <img class="banner-img" src="images/offer-1.png" alt="banner-1">
                                     <div class="content-absolute content-slide">
                                         <div class="container height-inherit d-flex align-items-center">
@@ -432,7 +443,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-6 col-md-6 col-12 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1200">
-                                <a class="banner-item position-relative rounded" href="collection-left-sidebar.html">
+                                <a class="banner-item position-relative rounded" href="shop.html">
                                     <img class="banner-img" src="images/offer-2.png" alt="banner-2">
                                     <div class="content-absolute content-slide">
                                         <div class="container height-inherit d-flex align-items-center">
@@ -884,20 +895,20 @@
     	</div>
     </section> -->
     <footer class="ftco-footer ftco-section">
-		<div class="container">
+		<div class="container-fluid" style="padding: 0 7%;">
 			<div class="row">
 				<div class="mouse">
-						  <a href="#" class="mouse-icon">
-							  <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
-						  </a>
-					  </div>
+					<a href="#" class="mouse-icon">
+						<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+					</a>
+				</div>
 			</div>
 		  <div class="row mb-5">
 			<div class="col-md">
 			  <div class="ftco-footer-widget mb-4">
-				<h2 class="ftco-heading-2"><img src="images/logohatem.png" style="width:60px;"></h2>
-				<p>Al-Hatem Manufacturing for ready-made serves to provide all requirements of military sectors workers.</p>
-			   <img src="images/location.jpg" class="MapLocation">
+				<!-- <h2 class="ftco-heading-2"><img src="images/logohatem.png" style="width:60px;"></h2>
+				<p>Al-Hatem Manufacturing for ready-made serves to provide all requirements of military sectors workers.</p> -->
+			   <img src="images/location.jpeg" class="MapLocation" style="height: 265px;">
 			  </div>
 			</div>
 			<div class="col-md">

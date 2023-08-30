@@ -3786,7 +3786,7 @@ input[type="button"].btn-block {
   float: right;
 }
       /* Custom dropdown */
-      
+      .left{float:left !important;}
 .card {
   position: relative;
   display: -webkit-box;
@@ -8462,10 +8462,17 @@ h1, h2, h3, h4, h5,
       padding: 5px;
   }
   .div_to_hold_images img{
+    position: relative;
     width: 100%;
     height: auto;
     border-radius: 50%;
+    transform: scale(1);
+    transition: all 1s ease;
     box-shadow:1px 0px 6px 0px #a9acae87;
+  }
+  .div_to_hold_images img:hover{
+    transform: scale(1.5);
+    /* transition: all 1s ease; */
   }
   .contact_detail{
     font-size: 14px;
@@ -8486,6 +8493,7 @@ h1, h2, h3, h4, h5,
   }
   .MapLocation{
     border-radius:8px;
+    width: 100%;
   }
   .details__div{
     border: 1px solid #000;
