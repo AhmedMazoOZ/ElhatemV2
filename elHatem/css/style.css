@@ -3787,6 +3787,7 @@ input[type="button"].btn-block {
 }
       /* Custom dropdown */
       .left{float:left !important;}
+
 .card {
   position: relative;
   display: -webkit-box;
@@ -8453,24 +8454,25 @@ h1, h2, h3, h4, h5,
     display: flex;
   }
   .div_to_hold_images {
-      width:130px;
+      width:150px;
       margin:2px;
       display: inline-block;
       overflow:hidden;
       margin-left:8px;
       text-align: center;
       padding: 5px;
+      transform: scale(1);
+    transition: all 1s ease;
   }
   .div_to_hold_images img{
     position: relative;
     width: 100%;
     height: auto;
     border-radius: 50%;
-    transform: scale(1);
-    transition: all 1s ease;
+    
     box-shadow:1px 0px 6px 0px #a9acae87;
   }
-  .div_to_hold_images img:hover{
+  .div_to_hold_images:hover{
     transform: scale(1.5);
     /* transition: all 1s ease; */
   }
@@ -8505,6 +8507,28 @@ font-weight: bold;
 font-size: 14px;;
   }
   /*  */
+  .v-cards{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 20px;
+  }
+  .sectorProducts{
+    width: 100%;
+    /* height: 100px; */
+  }
+  .sectorProductsLink{
+    background: #dee2e6;
+    border-radius: 8px;}
+    .sectorHint{
+      color: #b3b3b3;
+    font-size: 15px;
+    }
+    .sectorName{
+      font-weight: bold;
+      color: #000;
+    }
 .valueImg{width:100px;}
 .banner-section {
   overflow: hidden;
@@ -8840,7 +8864,7 @@ img.single-banner-img {
         background: #b3b3b3; }
   .owl-carousel.home-slider {
     position: relative;
-    height: 750px;
+    height: 650px;
     z-index: 0;
     background: #1055a3; }
     .owl-carousel.home-slider .slider-item {
@@ -8872,7 +8896,8 @@ img.single-banner-img {
           position: relative;
           z-index: -1;
           background-position: center center;
-          height: auto; }
+          height: auto; 
+          margin-right: 50px;}
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
             position: absolute;
             top: 0;
