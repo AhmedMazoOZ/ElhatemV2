@@ -8519,10 +8519,22 @@ font-size: 14px;;
     text-transform: uppercase;
     background: transparent;
   }
+  .home_custome_link{
+    border: 1px solid #fff !important;
+    padding: 5px 10px !important;
+    margin-top: 19px !important;
+    border-radius: 20px !important;
+    margin-right: 13px !important;
+    color: #fff !important;
+  }
+  .custome_white{
+    color: #fff !important;
+
+  }
   /*  */
   .v-cards{
     padding: 20px;
-    border: 1px solid;
+    box-shadow: 1px 0px 6px 0px #a9acae87;
     border-radius: 8px;
     background: #fff;
     margin-bottom: 20px;
