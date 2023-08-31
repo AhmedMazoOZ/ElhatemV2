@@ -8531,6 +8531,24 @@ font-size: 14px;;
     color: #fff !important;
 
   }
+  .related_product_card{
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    height: 325px;
+    box-shadow: 1px 0px 6px 0px #a9acae87;
+
+  }
+  .related_product_card img{
+    width: 200px;
+    height: 80%;
+  }
+  .userComment{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    height: 80px;
+  }
   /*  */
   .v-cards{
     padding: 20px;
