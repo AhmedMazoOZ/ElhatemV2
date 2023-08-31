@@ -29,6 +29,10 @@
   /* --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   /* --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  */
 }
+@font-face {
+  font-family: Arial;
+  src: url("fonts/arial-fonts/ARIAL.TTF");
+}
 
 *,
 *::before,
@@ -54,7 +58,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff;
+  font-family: Arial; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8154,8 +8159,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
-  /* font-family: 'Kanit', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Kanit', sans-serif; */
   background: #fff;
   font-size: 15px;
   line-height: 1.8;
@@ -8473,7 +8478,7 @@ h1, h2, h3, h4, h5,
     box-shadow:1px 0px 6px 0px #a9acae87;
   }
   .div_to_hold_images:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     /* transition: all 1s ease; */
   }
   .contact_detail{
@@ -8505,6 +8510,14 @@ h1, h2, h3, h4, h5,
   .details__div h4{
 font-weight: bold;
 font-size: 14px;;
+  }
+  .offer_label{
+    color: #333333;
+    padding: 10px 0;
+    display: inline;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: transparent;
   }
   /*  */
   .v-cards{
@@ -8864,7 +8877,7 @@ img.single-banner-img {
         background: #b3b3b3; }
   .owl-carousel.home-slider {
     position: relative;
-    height: 650px;
+    height: 700px;
     z-index: 0;
     background: #1055a3; }
     .owl-carousel.home-slider .slider-item {
