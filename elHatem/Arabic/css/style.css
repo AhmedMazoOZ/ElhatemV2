@@ -3527,7 +3527,9 @@ input[type="button"].btn-block {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+
+}
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
@@ -8725,12 +8727,12 @@ img.single-banner-img {
 	  background: #fff;
     font-size: 14px;
     margin-top: 30px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 6px;
     border: 1px solid #D4D3E8;
     text-transform: uppercase;
     font-weight: 700;
-    display: grid;
+    display: inline-block;
     align-items: center;
     width: 100%;
     color: #10429c;
@@ -10605,6 +10607,22 @@ textarea.form-control {
       transform: translateY(-50%);
       color: rgba(0, 0, 0, 0.7); }
       @media (max-width: 767.98px) {
+          
+    .login_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+  }
+  .screen {
+    background: #f5f5f570;
+    position: relative;
+    height: auto;
+    width: 80%;
+    box-shadow: 0px 0px 24px #0c2b482e;
+    top: 35px;
+    margin-bottom: 10%;
+}
         .block-17 form .fields .icon {
           right: 10px; } }
     .block-17 form .fields .select-wrap {

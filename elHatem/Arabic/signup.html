@@ -50,63 +50,67 @@
   z-index: 4;
     position: relative;
 }
+.button__icon{
+  transform: scaleX(-1);
+    float: left;
+}
 </style>
 </head>
 <body class="goto-here">
-  <div class="py-2 bg-white customHead">
+  <div class="py-2 bg-white">
     <div class="container-fluid">
-      <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-        <div class="col-lg-12 d-block" style="font-weight: bold;">
-          <div class="row d-flex" style="margin-right:3.5%;">
-            <div class="col-md-4 pr-4 d-flex topper align-items-center text-center">
-              <div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
-              <span class="text-primary"><span class="icon-phone2"></span>60933345 - 50524941</span>
-            </div>
-            <div class="col-md-4 pr-4 d-flex topper align-items-center text-center">
-              <div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
-              <span class="text-primary"><span class="icon-paper-plane"></span>alhatemfactory@gmail.com</span>
-            </div>
-          <div class="col-md-4 pr-4 d-flex topper align-items-center text-center" >
-            <div class="d-flex align-items-center"style="justify-content: center; width:100%;">
-              <a class="text-primary" href="login.html">
-                <span>  Login </span>
-              </a>
-              <span style="padding: 0 3px;">|</span>
-              <a class="text-primary" href="signup.html">
-                <span>  Signup </span>
-              </a>
-              <div class="currency-wrapper" style="width: 22%;">
-                <select class="select_lang text-primary" name="language" id="language">
-                  <option class="text-dark" value="Arabic">AR</option>
-                  <option class="text-dark" value="English">EN</option>
-                </select>
-              </div>
-            </div>
-            </div>
+       <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+          <div class="col-lg-12 d-block" style="font-weight: bold;">
+             <div class="row d-flex" style="margin-right:3.5%;">
+                <div class="col-md-4 pr-4 d-flex topper align-items-center text-center">
+                   <div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
+                   <span class="text-primary"><span class="icon-phone2"></span>60933345 - 50524941</span>
+                </div>
+                <div class="col-md-4 pr-4 d-flex topper align-items-center text-center">
+                   <div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
+                   <span class="text-primary"><span class="icon-paper-plane"></span>alhatemfactory@gmail.com</span>
+                </div>
+               <div class="col-md-4 pr-4 d-flex topper align-items-center text-center" >
+                  <div class="d-flex align-items-center"style="justify-content: center; width:100%;">
+                     <a class="text-primary" href="login.html">
+                        <span>  تسجيل الدخول </span>
+                     </a>
+                     <span style="padding: 0 3px;">|</span>
+                     <a class="text-primary" href="signup.html">
+                        <span>  انشاء حساب </span>
+                     </a>
+                     <div class="currency-wrapper" style="width: 22%;">
+                        <select class="select_lang text-primary" name="language" id="language">
+                           <option class="text-dark" value="Arabic">AR</option>
+                           <option class="text-dark" value="English">EN</option>
+                        </select>
+                     </div>
+                  </div>
+                </div>
+             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-primary ftco-navbar-light" id="ftco-navbar">
+       </div>
+     </div>
+ </div>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container-fluid" style="margin-right: 5%;">
-    <a class="navbar-brand" href="index.html"><img src="images/logohatem.png" style="width:80px;margin-top: 18px;"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><img src="images/logohatem.png" style="width:80px;margin-top: 18px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav mr-auto left">
-          <li class="nav-item active"><a href="index.html" class="nav-link home_custome_link">Home</a></li>
-          <li class="nav-item active"><a href="sectors.html" class="nav-link home_custome_link">Sectors</a></li>
-          <li class="nav-item active"><a href="shop.html" class="nav-link home_custome_link">Products</a></li>
-          <li class="nav-item active"><a href="about.html" class="nav-link home_custome_link">About</a></li>
-          <li class="nav-item active"><a href="contact.html" class="nav-link home_custome_link">Contact</a></li>
+        <ul class="navbar-nav ml-auto left">
+          <li class="nav-item active"><a href="index.html" class="nav-link home_custome_link">الرئيسيه</a></li>
+          <li class="nav-item active"><a href="sectors.html" class="nav-link home_custome_link">الاقسام</a></li>
+          <li class="nav-item active"><a href="shop.html" class="nav-link home_custome_link">المنتجات</a></li>
+          <li class="nav-item active"><a href="about.html" class="nav-link home_custome_link">من نحن</a></li>
+          <li class="nav-item active"><a href="contact.html" class="nav-link home_custome_link">تواصل معنا</a></li>
           </ul>
-    <ul class="navbar-nav ml-auto text-white" style="margin-right: 8%;">
-      <li class="nav-item active"><a href="cart.html" class="nav-link  home_custome_link"style="font-size: 18px; border:none !important;"><span class="icon-shopping_cart" ></span></a></li><i clas="fa fa-list"></i>
-      <li class="nav-item active"><a href="whishlist.html" class="nav-link  home_custome_link" style=" border:none !important;"><i class="fa-regular fa-heart mt-1" style="font-size: 22px;"></i><span class="whishIcon">2</span></a></li>
-      </ul>
+      <ul class="navbar-nav mr-auto text-white" style="margin-left: 8%;">
+         <li class="nav-item active"><a href="cart.html" class="nav-link  home_custome_link"style="font-size: 18px; border:none !important;"><span class="icon-shopping_cart" ></span></a></li><i clas="fa fa-list"></i>
+         <li class="nav-item active"><a href="whishlist.html" class="nav-link  home_custome_link" style=" border:none !important;"><i class="fa-regular fa-heart mt-1" style="font-size: 22px;"></i><span class="whishIcon">2</span></a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -117,12 +121,12 @@
 		<ul class="list-unstyled d-flex align-items-center m-0">
 			<li class="py-2 px-3">
 				<a href="index.html">
-					Home
+					الرئيسيه
 				</a>
 				<span>/</span>
 			</li>
 			<li>
-			<li>Signup</li>
+			<li>انشاء حساب</li>
 		</ul>
 	</div>
 </div>
@@ -130,41 +134,41 @@
     <div class="screen">
 		<div class="screen__content">
             <form class="login">
-                <h1 class="LoginH1">Create Account</h1>
+                <h1 class="LoginH1">انشاء حساب</h1>
 				<div class="login__field">
-					<label>First Name</label>
-					<input type="text" class="login__input form-control loginFormInput" placeholder="First name">
+					<label>الاسم الاول</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="الاسم الاول">
 				</div>
 				<div class="login__field">
-					<label>Last Name</label>
-					<input type="text" class="login__input form-control loginFormInput" placeholder="Last name">
+					<label>الاسم الاخير</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="الاسم الاخير">
 				</div>
 				<div class="login__field">
-					<label>Email</label>
-					<input type="text" class="login__input form-control loginFormInput" placeholder="Email">
+					<label>البريد الالكترونى</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="البريد الالكترونى">
 				</div>
 				<div class="login__field">
-					<label>Mobile</label>
-					<input type="text" class="login__input form-control loginFormInput" placeholder="Mobile">
+					<label>رقم التليفون</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="رقم التليفون">
 				</div>
 				<div class="login__field">
-					<label>Password</label>
-					<input type="password" class="login__input form-control loginFormInput" placeholder="Password">
+					<label>كلمة المرور</label>
+					<input type="password" class="login__input form-control loginFormInput" placeholder="كلمة المرور">
 				</div>
 				<div class="login__field">
-					<label>confirm Password</label>
-					<input type="password" class="login__input form-control loginFormInput" placeholder="confirm Password">
+					<label>تأكيد كلمة السر</label>
+					<input type="password" class="login__input form-control loginFormInput" placeholder="تأكيد كلمة السر">
 				</div>
 				<div class="login__field">
-					<label>City</label>
-					<input type="text" class="login__input form-control loginFormInput" placeholder="City">
+					<label>المدينة</label>
+					<input type="text" class="login__input form-control loginFormInput" placeholder="المدينة">
 				</div>
 				<button class="button login__submit cust-btn">
-					<span class="button__text">sign up</span>
+					<span class="button__text">انشاء</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>
 				<button class="button login__submit">
-					<span class="button__text">Log In Now</span>
+					<span class="button__text">تسجيل الان</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>	
 								
