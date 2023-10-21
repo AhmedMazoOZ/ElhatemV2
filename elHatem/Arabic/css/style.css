@@ -30,8 +30,11 @@
   /* --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  */
 }
 @font-face {
-  font-family: Arial;
-  src: url("fonts/arial-fonts/ARIAL.TTF");
+  font-family: 'GE-SS-Two-Bold';
+  src: url("../fonts/GE-SS-Two-Bold.otf") format('opentype');
+  /* font-weight: normal;
+  font-style: normal; */
+
 }
 
 *,
@@ -42,7 +45,7 @@
 
 
 html {
-  font-family: sans-serif;
+  font-family: 'GE-SS-Two-Bold';
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -59,7 +62,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  font-family: Arial; }
+  font-family:  'GE-SS-Two-Bold'; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8161,7 +8164,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'GE-SS-Two-Bold';
     /* font-family: 'Kanit', sans-serif; */
   background: #fff;
   font-size: 15px;
@@ -8200,7 +8203,7 @@ h1, h2, h3, h4, h5,
   width: 100%;
   display: block;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+   }
   @media (max-width: 767.98px) {
     .topper {
       margin-bottom: 10px; } }
@@ -8248,7 +8251,6 @@ h1, h2, h3, h4, h5,
     font-weight: 400;
     color: #000000;
     text-transform: uppercase;
-    letter-spacing: 2px;
     opacity: 1 !important;
     font-weight: 700; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -8319,7 +8321,7 @@ h1, h2, h3, h4, h5,
     padding-right: 0;
     text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: .1em; }
+     }
     .ftco-navbar-light .navbar-toggler:focus {
       outline: none !important; }
   .ftco-navbar-light.scrolled {
@@ -8381,7 +8383,7 @@ h1, h2, h3, h4, h5,
       padding-right: 0;
       text-transform: uppercase;
       font-size: 16px;
-      letter-spacing: .1em; }
+     }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
@@ -8423,7 +8425,7 @@ h1, h2, h3, h4, h5,
     .hero-wrap .slider-text .breadcrumbs {
       text-transform: uppercase;
       font-size: 12px;
-      letter-spacing: 3px;
+      
       margin-bottom: 0;
       z-index: 99;
       font-weight: 300; }
@@ -8435,8 +8437,8 @@ h1, h2, h3, h4, h5,
       font-weight: 800;
       color: #000000;
       font-size: 30px;
-      font-family: "Open Sans", Arial, sans-serif;
-      letter-spacing: 3px;
+      font-family: "GE-SS-Two-Bold";
+    
       text-transform: uppercase; }
     .hero-wrap .slider-text .btn-primary {
       border: 1px solid rgba(255, 255, 255, 0.4);
@@ -8489,7 +8491,6 @@ h1, h2, h3, h4, h5,
   .contact_detail{
     font-size: 14px;
     font-weight: 800;
-    letter-spacing: 3px;
     margin-top: 0;
     margin-bottom: 40px;
     position: relative;
@@ -9006,7 +9007,6 @@ img.single-banner-img {
           color: #000000;
           font-weight: 300;
           font-size: 14px;
-          letter-spacing: 4px;
           text-transform: uppercase;
           display: inline-block;
           color: #fff;
@@ -9294,7 +9294,6 @@ img.single-banner-img {
       top: 0;
       left: 0;
       text-transform: uppercase;
-      letter-spacing: 3px;
       font-size: 12px;
       z-index: 1; }
     .product .img-prod img {
@@ -9355,7 +9354,6 @@ img.single-banner-img {
     .product .text .cat span {
       font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 1px;
       color: rgba(0, 0, 0, 0.3); }
     .product .text .bottom-area {
       position: absolute;
@@ -9490,8 +9488,7 @@ img.single-banner-img {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      text-transform: uppercase;
-      letter-spacing: 2px; }
+      text-transform: uppercase;}
 
 .nav-pills {
   width: 100%;
@@ -9714,7 +9711,6 @@ img.single-banner-img {
       .table tbody tr td.product-name h3 {
         font-size: 14px;
         text-transform: uppercase;
-        letter-spacing: 2px;
         font-weight: 700; }
     .table tbody tr td.total, .table tbody tr td.price {
       color: #000000; }
@@ -9731,7 +9727,6 @@ img.single-banner-img {
   .cart-total h3 {
     font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-bottom: 20px;
     font-weight: 700; }
   .cart-total p {
@@ -9751,8 +9746,7 @@ img.single-banner-img {
 .billing-heading {
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px; }
+  font-weight: 700;}
 
 .billing-form .form-group {
   position: relative; }
@@ -9972,7 +9966,6 @@ textarea.form-control {
   width: 100%; }
   .ftco-choose .text .subheading {
     font-size: 12px;
-    letter-spacing: 4px;
     color: #000000;
     font-weight: 600;
     text-transform: uppercase; }
@@ -10020,7 +10013,6 @@ textarea.form-control {
       font-weight: 400;
       font-size: 12px;
       display: block;
-      letter-spacing: 2px;
       color: #000000;
       text-transform: uppercase;
       color: #fff; }
@@ -10071,14 +10063,13 @@ textarea.form-control {
   background: #000000; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
-    letter-spacing: .1em; }
+  }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     margin-bottom: 20px;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 3px;
     color: #fff; }
   .ftco-footer .ftco-footer-widget ul li {
     font-size: 14px;
@@ -10150,7 +10141,7 @@ textarea.form-control {
     margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    }
   .heading-section h2 {
     position: relative;
     font-size: 40px;
@@ -10212,7 +10203,6 @@ textarea.form-control {
     .ftco-services .services .media-body span {
       font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 2px;
       color: rgba(0, 0, 0, 0.3); }
 
 .testimony-section {
@@ -10315,7 +10305,6 @@ textarea.form-control {
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 2px;
     color: rgba(0, 0, 0, 0.2); }
   .testimony-wrap .line {
     position: relative;
@@ -10466,7 +10455,7 @@ textarea.form-control {
     font-size: 12px;
     color: rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
-    letter-spacing: 1px; }
+     }
   @media (max-width: 767.98px) {
     .ftco-counter .counter-wrap {
       margin-bottom: 20px; } }
@@ -10478,7 +10467,7 @@ textarea.form-control {
   .ftco-counter .ftco-label {
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: .1em; }
+}
 
 .block-20 {
   overflow: hidden;
@@ -10529,7 +10518,7 @@ textarea.form-control {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 2px; }
+ }
   .blog-entry .meta > div a {
     color: black;
     font-size: 12px; }
@@ -10752,7 +10741,6 @@ textarea.form-control {
       .comment-list li .comment-body .meta {
         text-transform: uppercase;
         font-size: 13px;
-        letter-spacing: .1em;
         color: #ccc; }
       .comment-list li .comment-body .reply {
         padding: 5px 10px;
@@ -10760,7 +10748,6 @@ textarea.form-control {
         color: #000000;
         text-transform: uppercase;
         font-size: 11px;
-        letter-spacing: .1em;
         font-weight: 400;
         border-radius: 4px; }
         .comment-list li .comment-body .reply:hover {
@@ -10775,7 +10762,7 @@ textarea.form-control {
     color: black;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+ }
     .search-form .form-group input::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: black; }
@@ -10812,8 +10799,7 @@ textarea.form-control {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 30px;
-    font-weight: 600;
-    letter-spacing: 2px; }
+    font-weight: 600; }
 
 .categories, .sidelink {
   padding: 0; }
