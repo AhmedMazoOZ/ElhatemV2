@@ -57,9 +57,9 @@
 					  </div>
 					  <div class="col-md-1 col-sm-12">
 					   <div class="currency-wrapper" style="width: 22%;">
-						  <select class="select_lang text-primary" name="language" id="language">
-							 <option class="text-dark" value="Arabic">AR</option>
-							 <option class="text-dark" value="English">EN</option>
+						<select class="select_lang text-primary" name="language" id="language" onChange="window.document.location.href=this.options[this.selectedIndex].value";>
+							<option class="text-dark" value="index.html">AR</option>
+							<option class="text-dark" value="../English/index.html">EN</option>
 						  </select>
 					   </div>
 					  </div>
@@ -73,7 +73,7 @@
 	    <div class="container-fluid" style="margin-right: 5%;">
 			<a class="navbar-brand" href="index.html"><img src="images/logohatem.png" style="width:80px;margin-top: 18px;"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span> القائمه
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -84,7 +84,7 @@
 	          <li class="nav-item active"><a href="about.html" class="nav-link home_custome_link">من نحن</a></li>
 	          <li class="nav-item active"><a href="contact.html" class="nav-link home_custome_link">تواصل معنا</a></li>
 	          </ul>
-			<ul class="navbar-nav mr-auto text-white" style="margin-left: 8%;">
+			<ul class="nav_ul navbar-nav mr-auto text-white" style="margin-left: 8%;">
 				<li class="nav-item active"><a href="cart.html" class="nav-link  home_custome_link"style="font-size: 18px; border:none !important;"><span class="icon-shopping_cart" ></span></a></li><i clas="fa fa-list"></i>
 				<li class="nav-item active"><a href="whishlist.html" class="nav-link  home_custome_link" style=" border:none !important;"><i class="fa-regular fa-heart mt-1" style="font-size: 22px;"></i><span class="whishIcon">2</span></a></li>
 			  </ul>
@@ -138,7 +138,7 @@
     </section>
 	<section id="sectors">
 		<h3>الاقسام</h3>
-		<div class="container" style="padding: 3%; max-width: 90%;"> 
+		<div class="container" style="padding: 3%; max-width: 90%; overflow: auto; white-space: nowrap;"> 
 			<div class="sec_div"><div class="div_to_hold_images"><img src="images/logo_one.png" onclick="window.location.href='shop.html'"></div><br><div class="col-xs-12 text-center mt-1"><button class="btn btn-primary" onclick="window.location.href='shop.html'"> المزيد</button></div></div>
 			<div class="sec_div"><div class="div_to_hold_images"><img src="images/logo_two.png" onclick="window.location.href='shop.html'"></div><br><div class="col-xs-12 text-center mt-1"><button class="btn btn-primary" onclick="window.location.href='shop.html'"> المزيد</button></div></div>
 			<div class="sec_div"><div class="div_to_hold_images"><img src="images/logo_three.png" onclick="window.location.href='shop.html'"></div><br><div class="col-xs-12 text-center mt-1"><button class="btn btn-primary" onclick="window.location.href='shop.html'"> المزيد</button></div></div>
@@ -183,7 +183,7 @@
 	    					</div>
     						<h3><a href="#">زى عسكرى</a></h3>
     						<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 								
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
@@ -216,7 +216,7 @@
 	    					</div>
     						<h3><a href="#">بدلة عازلة</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span class="mr-2 price-dc"> 120.00</span><span class="price-sale">دينار كويتى 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>
+	    						<p class="price"><span class="mr-2 price-dc"> 120.00</span><span class="price-sale"> 80.00 </span><span>دينار كويتى</span> <a class="favimg"> <img  src="images/favorite.png"></a></p>
 								
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
@@ -248,7 +248,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -279,7 +279,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -311,7 +311,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
     						<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -343,7 +343,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span class="mr-2 price-dc"> 120.00</span><span class="price-sale">دينار كويتى 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>
+	    						<p class="price"><span class="mr-2 price-dc"> 120.00</span><span class="price-sale"> 80.00 </span><span>دينار كويتى</span> <a class="favimg"> <img  src="images/favorite.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -374,7 +374,7 @@
 	    					</div>
     						<h3><a href="#">بدلة عسكرية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -405,7 +405,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -437,7 +437,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
     						<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -469,7 +469,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span class="mr-2 price-dc"> 120.00</span><span class="price-sale">دينار كويتى 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>
+	    						<p class="price"><span class="mr-2 price-dc"> 120.00</span><span class="price-sale"> 80.00 </span><span>دينار كويتى</span> <a class="favimg"> <img  src="images/favorite.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -500,7 +500,7 @@
 	    					</div>
     						<h3><a href="#">بدلة عسكرية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -531,7 +531,7 @@
 	    					</div>
     						<h3><a href="#">ملابس طبية</a></h3>
   							<div class="pricing">
-	    						<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+	    						<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
     							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -614,7 +614,7 @@
 						</div>
 						<h3><a href="#">بدلة عازلة</a></h3>
 						<div class="pricing">
-							<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+							<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -646,7 +646,7 @@
 						</div>
 						<h3><a href="#">بدلة عسكرية</a></h3>
 						  <div class="pricing">
-							<p class="price"><span class="mr-2 price-dc">  120.00</span><span class="price-sale">دينار كويتى 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>
+							<p class="price"><span class="mr-2 price-dc">  120.00</span><span class="price-sale"> 80.00 </span><span>دينار كويتى</span> <a class="favimg"> <img  src="images/favorite.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -677,7 +677,7 @@
 						</div>
 						<h3><a href="#">ملابس طبية</a></h3>
 						  <div class="pricing">
-							<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+							<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -708,7 +708,7 @@
 						</div>
 						<h3><a href="#">ملابس طبية</a></h3>
 						  <div class="pricing">
-							<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+							<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -740,7 +740,7 @@
 						</div>
 						<h3><a href="#">بدلة عازلة</a></h3>
 						<div class="pricing">
-							<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+							<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -772,7 +772,7 @@
 						</div>
 						<h3><a href="#">بدلة عسكرية</a></h3>
 						  <div class="pricing">
-							<p class="price"><span class="mr-2 price-dc">  120.00</span><span class="price-sale">دينار كويتى 80.00</span><a class="favimg"> <img  src="images/favorite.png"></a></p>
+							<p class="price"><span class="mr-2 price-dc">  120.00</span><span class="price-sale"> 80.00 </span><span>دينار كويتى</span> <a class="favimg"> <img  src="images/favorite.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -803,7 +803,7 @@
 						</div>
 						<h3><a href="#">ملابس طبية</a></h3>
 						  <div class="pricing">
-							<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+							<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>
@@ -834,7 +834,7 @@
 						</div>
 						<h3><a href="#">ملابس طبية</a></h3>
 						  <div class="pricing">
-							<p class="price"><span>دينار كويتى 120.00</span> <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
+							<p class="price"><span> 120.00 </span><span>دينار كويتى</span>  <span style="float: left;"></span><a class="favimg"><img  src="images/heart.png"></a></p>
 						</div>
 						<p class="bottom-area d-flex px-3">
 							<a href="cart.html" class="add-to-cart text-center py-2 mr-1"><span>اضف <i class="ion-ios-add mr-1"></i></span></a>

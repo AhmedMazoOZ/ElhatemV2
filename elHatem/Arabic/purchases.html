@@ -122,9 +122,9 @@ textarea{
                     </div>
                     <div class="col-md-1 col-sm-12">
                      <div class="currency-wrapper" style="width: 22%;">
-                        <select class="select_lang text-primary" name="language" id="language">
-                           <option class="text-dark" value="Arabic">AR</option>
-                           <option class="text-dark" value="English">EN</option>
+                        <select class="select_lang text-primary" name="language" id="language" onChange="window.document.location.href=this.options[this.selectedIndex].value";>
+                        <option class="text-dark" value="purchases.html">AR</option>
+                        <option class="text-dark" value="../English/purchases.html">EN</option>
                         </select>
                      </div>
                     </div>
@@ -138,7 +138,7 @@ textarea{
 	    <div class="container-fluid" style="margin-right: 5%;">
 			<a class="navbar-brand" href="index.html"><img src="images/logohatem.png" style="width:80px;margin-top: 18px;"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span> القائمه
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -149,7 +149,7 @@ textarea{
 	          <li class="nav-item active"><a href="about.html" class="nav-link home_custome_link">من نحن</a></li>
 	          <li class="nav-item active"><a href="contact.html" class="nav-link home_custome_link">تواصل معنا</a></li>
 	          </ul>
-			<ul class="navbar-nav mr-auto text-white" style="margin-left: 8%;">
+			<ul class="nav_ul navbar-nav mr-auto text-white" style="margin-left: 8%;">
 				<li class="nav-item active"><a href="cart.html" class="nav-link  home_custome_link"style="font-size: 18px; border:none !important;"><span class="icon-shopping_cart" ></span></a></li><i clas="fa fa-list"></i>
 				<li class="nav-item active"><a href="whishlist.html" class="nav-link  home_custome_link" style=" border:none !important;"><i class="fa-regular fa-heart mt-1" style="font-size: 22px;"></i><span class="whishIcon">2</span></a></li>
 			  </ul>
@@ -264,52 +264,52 @@ textarea{
             </div>
          </div>
       </div>
-      <div class="container-fluid px-0">
-         <div class="row no-gutters">
-            <div class="col-md-4 col-lg-2 ftco-animate">
-               <a href="images/gallery-1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
-                  <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                     <span class="icon-instagram"></span>
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-4 col-lg-2 ftco-animate">
-               <a href="images/gallery-2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-2.jpg);">
-                  <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                     <span class="icon-instagram"></span>
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-4 col-lg-2 ftco-animate">
-               <a href="images/gallery-3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-3.jpg);">
-                  <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                     <span class="icon-instagram"></span>
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-4 col-lg-2 ftco-animate">
-               <a href="images/gallery-4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-4.jpg);">
-                  <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                     <span class="icon-instagram"></span>
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-4 col-lg-2 ftco-animate">
-               <a href="images/gallery-5.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-5.jpg);">
-                  <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                     <span class="icon-instagram"></span>
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-4 col-lg-2 ftco-animate">
-               <a href="images/gallery-6.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-6.jpg);">
-                  <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                     <span class="icon-instagram"></span>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </div>
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters">
+					<div class="col-md-4 col-lg-2 ftco-animate">
+						<a href="images/gallery-1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ins1.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-lg-2 ftco-animate">
+						<a href="images/gallery-7.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ins2.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-lg-2 ftco-animate">
+						<a href="images/gallery-3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ins3.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-lg-2 ftco-animate">
+						<a href="images/gallery-4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ins4.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-lg-2 ftco-animate">
+						<a href="images/gallery-5.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ins5.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-lg-2 ftco-animate">
+						<a href="images/gallery-6.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/ins6.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
     </section>
     <footer class="ftco-footer ftco-section">
     <div class="container-fluid" style="padding: 0 7%;">
