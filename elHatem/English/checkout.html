@@ -55,10 +55,10 @@
 									<span>  Signup </span>
 								</a>
 								<div class="currency-wrapper" style="width: 22%;">
-									<select class="select_lang text-primary" name="language" id="language">
-										<option class="text-dark" value="Arabic">AR</option>
-										<option class="text-dark" value="English">EN</option>
-									</select>
+									<select class="select_lang text-primary" name="language" id="language" onChange="window.document.location.href=this.options[this.selectedIndex].value";>
+										<option class="text-dark" value="checkout.html">EN</option>
+										<option class="text-dark" value="../Arabic/checkout.html">AR</option>
+										</select>
 								</div>
 							</div>
 					    </div>
@@ -75,14 +75,14 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto left">
+	        <ul class="navbar-nav mr-auto left" >
 	          <li class="nav-item active"><a href="index.html" class="nav-link home_custome_link">Home</a></li>
 	          <li class="nav-item active"><a href="sectors.html" class="nav-link home_custome_link">Sectors</a></li>
 	          <li class="nav-item active"><a href="shop.html" class="nav-link home_custome_link">Products</a></li>
 	          <li class="nav-item active"><a href="about.html" class="nav-link home_custome_link">About</a></li>
 	          <li class="nav-item active"><a href="contact.html" class="nav-link home_custome_link">Contact</a></li>
 	          </ul>
-			<ul class="navbar-nav ml-auto text-white" style="margin-right: 8%;">
+			<ul class="nav_ul navbar-nav ml-auto text-white" style="margin-right: 8%; ">
 				<li class="nav-item active"><a href="cart.html" class="nav-link  home_custome_link"style="font-size: 18px; border:none !important;"><span class="icon-shopping_cart" ></span></a></li><i clas="fa fa-list"></i>
 				<li class="nav-item active"><a href="whishlist.html" class="nav-link  home_custome_link" style=" border:none !important;"><i class="fa-regular fa-heart mt-1" style="font-size: 22px;"></i><span class="whishIcon">2</span></a></li>
 			  </ul>
