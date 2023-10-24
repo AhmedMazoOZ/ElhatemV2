@@ -8559,6 +8559,10 @@ font-size: 14px;;
     height: 80px;
   }
   /*  */
+.mobile_side{display: flex;}
+.mobile_only{
+  display: none;
+}
   .v-cards{
     padding: 20px;
     box-shadow: 1px 0px 6px 0px #a9acae87;
@@ -8669,7 +8673,8 @@ img.single-banner-img {
   width: 50%;
   box-shadow: 0px 0px 24px #0c2b482e;
   top: 35px;
-  margin-bottom: 10%;
+  margin-bottom: 30% !important;
+  margin: auto;
 }
 .screen__content {
 	z-index: 1;
@@ -10614,6 +10619,15 @@ textarea.form-control {
     box-shadow: 0px 0px 24px #0c2b482e;
     top: 35px;
     margin-bottom: 10%;
+}
+.mobile_side{display: none !important;}
+.mobile_only{
+  display: block;
+  width: 100%;
+  float: left;}
+  .mobile_only_select_lang{ 
+      color: #fff;
+    float: left;
 }
         .block-17 form .fields .icon {
           right: 10px; } }
