@@ -8420,8 +8420,8 @@ h1, h2, h3, h4, h5,
     .owl-carousel.home-slider .slider-item .slider-text h1{
       font-size: 34px;}
       .owl-carousel.home-slider .slider-item .slider-text p{
-        color:#000;
-        font-size: 12px;
+        color:#000 !important;
+        font-size: 12px !important;
       }
 
  }
@@ -9040,7 +9040,8 @@ img.single-banner-img {
               z-index: 1;
               padding: 1em; } }
           .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
-            position: relative; }
+            position: relative;
+          text-align: left; }
             @media (min-width: 992px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
                 position: absolute;
@@ -9086,7 +9087,7 @@ img.single-banner-img {
               font-size: 50px; } }
           @media (max-width: 767.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; } }
+              font-size: 24px; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
           color: rgba(0, 0, 0, 0.8);
           font-weight: 400; }
