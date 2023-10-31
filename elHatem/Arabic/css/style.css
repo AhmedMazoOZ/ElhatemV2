@@ -8433,12 +8433,13 @@ h1, h2, h3, h4, h5,
       z-index: 99;
       font-weight: 300; }
       .hero-wrap .slider-text .breadcrumbs span {
-        color: black; }
+        color: #fff !important; }
         .hero-wrap .slider-text .breadcrumbs span a {
-          color: #000000; }
+          color: #fff !important; }
+
     .hero-wrap .slider-text .bread {
       font-weight: 800;
-      color: #000000;
+      color: #fff !important;
       font-size: 30px;
       font-family: "GE-SS-Two-Bold";
     
