@@ -31,7 +31,7 @@
 }
 @font-face {
   font-family: 'GE-SS-Two-Bold';
-  src: url("../fonts/GE-SS-Two-Bold.otf") format('opentype');
+  src: url("../fonts/GE-SS-Two-Bold.otf");
   /* font-weight: normal;
   font-style: normal; */
 
@@ -9354,6 +9354,7 @@ img.single-banner-img {
       margin-bottom: 0;
       color: #000000;
       font-weight: 400; }
+      .price span:first-of-type, .price-sale{font-family: none !important;}
       .product .text p.price span.price-dc {
         text-decoration: line-through;
         color: #b3b3b3; }
@@ -10543,7 +10544,8 @@ textarea.form-control {
     margin-bottom: 15px; }
   .block-23 ul li .icon, .block-23 ul li .text {
     display: table-cell;
-    vertical-align: top; }
+    vertical-align: top;
+  font-family: none !important; }
   .block-23 ul li .icon {
     width: 40px;
     font-size: 18px;
